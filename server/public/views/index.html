@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+    <head>
+        <script type="text/javascript" src="/vendors/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="/assets/scripts/app.min.js"></script>
+        <link rel="stylesheet" href="/vendors/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/assets/style/style.css">
+
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="row well">
+                <form id="inputForm" method="POST">
+                     <div class="col-md-3">
+                        <label for="name">Name</label>
+                        <input name="name" class="name" type ="text">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="message">Post your Message</label>
+                        <input name="message" class="message" type="text">
+                    </div>
+                    <div class="col-md-3">
+                        <input type="submit" id="submit" value="post">
+                    </div>
+                </form>
+
+            </div>
+            <div class="reload">
+                <button id="reloadMessages"><p>Refresh Message Board</p></button>
+            </div>
+            <div class ="appendedMessages">
+
+            </div>
+        </div>
+
+
+    </body>
+
+</html>
