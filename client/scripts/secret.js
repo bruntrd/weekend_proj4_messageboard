@@ -58,3 +58,5 @@ function appendMessage(data){
 
     }
 }
+
+var twitter = ["javabatman","javathehut","javascriptoro","manmongo", "jquerycoolio", "javacriptjackson", "jqueryzoro", "nodenonsense", "angularaction", "bootstrapbill", "htmlharry", "allcssallday", "thegithubster", "masterheroku", "maddogmongo"];

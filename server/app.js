@@ -5,6 +5,7 @@ var app = express();
 var db = require('./routes/db');
 var index= require('./routes/index');
 
+//var mongoURI = "mongodb://bruntrd:Freddy999@ds031203.mongolab.com:31203/message_board"
 var mongoURI = "mongodb://localhost:27017/messageboard";
 var mongoDB = mongoose.connect(mongoURI).connection;
 
@@ -26,7 +27,7 @@ app.use(bodyParser.urlencoded({expanded:true}));
 
 app.set("port", (process.env.PORT || 5000));
 
-app.use("/db", db);
+app.use("/db",db);
 app.use("/", index);
 
 app.listen(app.get("port"), function(){

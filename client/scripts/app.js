@@ -51,8 +51,8 @@ function appendMessage(data){
     for (var i=0; i<data.length; i++){
         $('.appendedMessages').append("<div></div>")
         var $el = $('.appendedMessages').children().last();
-        $el.append("<p>Name: " + data[i].name + "</p>");
-        $el.append("<p>Message: " + data[i].message + "</p>");
+        $el.append("<p class='jack row well'>Name: " + data[i].name + "<br>Message: "+ data[i].message + "</p>");
+        //$el.append("<p class=>Message: "
         //$el.append("<button data-id='"+data[i]._id+"'>delete</button>");
 
 
